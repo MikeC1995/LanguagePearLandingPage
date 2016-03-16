@@ -13,13 +13,24 @@
     <meta name="og:description" property="og:description" content="Mike Christensen | COMS32500 WebTech Project" />
     <meta name="og:url" property="og:url" content=""/>-->
 
-    <!-- Styles -->
+    <!-- FONTS -->
+    <!-- Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Droid Serif -->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+    <!-- Oleo Script Swash Caps -->
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css'>
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="/assets/styles/css/app.css">
   </head>
 
   <body ng-app="app" ng-controller="appController">
+    <!--<nav-bar></nav-bar>-->
+    <div id="big-header" ng-include="'/app/components/big-header.html'"></div>
 
-
+    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     <!-- Dependencies -->
     <script src="/node_modules/angular/angular.min.js"></script>
     <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
