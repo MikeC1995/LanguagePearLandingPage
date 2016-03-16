@@ -1,13 +1,24 @@
 <div id="steps">
-  <div class="circle">
-    <span>1</span>
+  <div class="nodes">
+    <a ui-sref="steps.1" class="node filled">
+      <div class="circle">
+        <span>1</span>
+      </div>
+      <div class="node-title">Answer a question</div>
+    </a>
+    <a ui-sref="steps.2" class="node" ng-class="{ filled: currentStep == 2 || currentStep == 3}">
+      <div class="circle">
+        <span>2</span>
+      </div>
+      <div class="node-title">Get paired</div>
+    </a>
+    <a ui-sref="steps.3" class="node" ng-class="{ filled: currentStep == 3}">
+      <div class="circle">
+        <span>3</span>
+      </div>
+      <div class="node-title">Practice speaking!</div>
+    </a>
+    <div class="connector" ng-class="{ filled: currentStep == 2 || currentStep == 3 }"></div>
+    <div class="connector" ng-class="{ filled: currentStep == 3}"></div>
   </div>
-  <div class="circle">
-    <span>2</span>
-  </div>
-  <div class="circle">
-    <span>3</span>
-  </div>
-  <div class="connector"></div>
-  <div class="connector"></div>
 </div>

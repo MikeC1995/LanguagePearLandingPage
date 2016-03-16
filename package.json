@@ -16,7 +16,8 @@
   },
   "homepage": "https://languagepear.com",
   "dependencies": {
-    "angular": "^1.4.9"
+    "angular": "^1.4.9",
+    "jquery": "^2.2.1"
   },
   "devDependencies": {
     "angular-ui-router": "^0.2.18",
