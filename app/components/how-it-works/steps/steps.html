@@ -6,7 +6,7 @@
       </div>
       <div class="node-title">Answer a question</div>
     </a>
-    <a ui-sref="steps.2" class="node" ng-class="{ filled: currentStep == 2 || currentStep == 3}">
+    <a ui-sref="steps.2" class="node" ng-class="{ filled: (currentStep == 2 || currentStep == 3)}">
       <div class="circle">
         <span>2</span>
       </div>
@@ -18,7 +18,7 @@
       </div>
       <div class="node-title">Practice speaking!</div>
     </a>
-    <div class="connector" ng-class="{ filled: currentStep == 2 || currentStep == 3 }"></div>
+    <div class="connector" ng-class="{ filled: (currentStep == 2 || currentStep == 3) }"></div>
     <div class="connector" ng-class="{ filled: currentStep == 3}"></div>
   </div>
 </div>

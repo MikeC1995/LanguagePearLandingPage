@@ -10,12 +10,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state("steps", {
       abstract: true,
+      url: '/',
       views: {
         '': { template: '<div ui-view></div>'}
       }
     })
     .state("steps.1", {
-      url: '/',
+      url: '',
       views: {
         '': { templateUrl:"/app/components/how-it-works/step-1/step-1.html" }
       },
@@ -41,6 +42,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
   $urlRouterProvider.otherwise("/");
 });
+
+// passing in $state causes it to be properly initialised, setting the state according to the url
+app.run(['$state', function ($state) {}]);
 
 app.controller('appController', function() {
 });
